@@ -1,0 +1,169 @@
+@import url("https://use.typekit.net/kyu6wps.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    background-color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  /* ---- HEADER ---- */
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+  }
+  .logo,
+  .logo-burger {
+    width: 30vw;
+  }
+  .nav-768 {
+    display: none;
+  }
+
+  .hamburger {
+    cursor: pointer;
+  }
+
+  .full-width,
+  label input {
+    display: none;
+  }
+
+  label .menu {
+    display: flex;
+  }
+
+  label input:checked + .menu .hamburger {
+    display: none;
+  }
+
+  label input:checked + .menu + .full-width {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #34a7b1;
+    z-index: 1000;
+  }
+
+  label input:checked + .menu + .full-width ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  label input:checked + .menu + .full-width ul li {
+    margin-bottom: 5px;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  label input:checked + .menu + .full-width a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .logo-burger {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo-burger img {
+    margin-bottom: 110%;
+  }
+
+  label input:checked + .menu + .full-width li:last-of-type {
+    margin-top: 70%;
+  }
+
+  label input:checked + .menu + .full-width li:last-of-type a {
+    color: #34a7b1;
+    font-size: 22px;
+    background-color: black;
+    font-family: "new-spirit-condensed", serif;
+    font-weight: 400;
+    padding: 20px 70px;
+    border-radius: 100px;
+  }
+  label input:checked + .menu + .full-width li:last-of-type a:hover {
+    background-color: #34a7b1;
+    color: black;
+    border: 2px solid black;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  header {
+    padding: 3%;
+  }
+  label input:checked + .menu + .full-width ul li {
+    font-size: 60px;
+  }
+  label input:checked + .menu + .full-width li:last-of-type a {
+    font-size: 25px;
+  }
+  .logo,
+  .logo-burger {
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 18px;
+  }
+  nav label {
+    display: none;
+  }
+  .nav-768 {
+    width: 100%;
+    display: block;
+  }
+  .nav-768 li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 1.5rem;
+    text-align: center;
+  }
+  .nav-768 li a {
+    font-size: 18px;
+    text-decoration: none;
+  }
+  .nav-768 li:last-child {
+    color: #34a7b1;
+    background-color: black;
+    font-family: "new-spirit-condensed", serif;
+    font-weight: 400;
+    padding: 20px 70px;
+    border-radius: 100px;
+    margin-right: 0;
+  }
+  .nav-768 li:last-child a {
+    color: #fff;
+  }
+  header a:link,
+  header a:visited {
+    color: black;
+  }
+  header a:hover {
+    color: #34a7b1;
+    font-weight: 500;
+  }
+  .nav-768 li:last-child a:hover {
+    color: #34a7b1;
+  }
+}

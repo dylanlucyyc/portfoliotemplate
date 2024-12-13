@@ -1,0 +1,256 @@
+@media screen and (min-width: 375px) {
+  main {
+    padding: 5%;
+  }
+  main p {
+    line-height: 25px;
+    margin-bottom: 1.5rem;
+  }
+
+  /* introduction */
+  .intro,
+  .something,
+  .featured,
+  .skills {
+    margin-bottom: 6rem;
+  }
+  .intro img {
+    width: 40vw;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    filter: saturate(100%);
+  }
+  .intro h1 {
+    font-family: "new-spirit-condensed", serif;
+    font-weight: 600;
+    /* width: 90%; */
+    font-size: 9vw;
+  }
+
+  .intro h1 span:last-child {
+    text-transform: uppercase;
+    font-style: italic;
+  }
+
+  /* something about me */
+
+  .something-grid img:last-of-type {
+    display: none;
+  }
+  h2 {
+    font-family: "new-spirit-condensed", serif;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: 6vw;
+  }
+  .arrow {
+    width: 25%;
+    margin-bottom: 1.5rem;
+  }
+  .something-grid img,
+  .hand-drawing img,
+  .featured-grid img,
+  .hand-drawing img {
+    width: 100%;
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+  }
+
+  .something div p:last-child,
+  .skills div p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* featured works */
+
+  .featured figure {
+    margin-bottom: 3rem;
+  }
+  .featured figcaption span {
+    display: block;
+  }
+
+  /* title of works */
+  .featured figcaption span a {
+    display: block;
+  }
+  .featured figcaption span a,
+  .skills h3 {
+    font-family: "new-spirit-condensed", serif;
+    font-weight: 600;
+    font-size: 19px;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+  }
+  .featured figcaption span a:link,
+  .featured figcaption a:visited {
+    color: black;
+  }
+  .featured figcaption a:hover {
+    color: #34a7b1;
+  }
+
+  /* skills */
+
+  .details-skills {
+    margin-bottom: 2rem;
+  }
+  .hand-drawing img:last-of-type {
+    display: none;
+  }
+
+@media screen and (min-width: 640px) {
+  .intro img {
+    width: 30vw;
+  }
+  .arrow,
+  h2,
+  .something div img,
+  .skills div img,
+  .featured div img,
+  .hand-drawing img {
+    margin-bottom: 2rem;
+  }
+  .featured figure {
+    margin-bottom: 4rem;
+  }
+  .intro h1 {
+    font-size: 7vw;
+    /* width: 100%; */
+  }
+  h2 {
+    font-size: 4.3vw;
+  }
+  .skills h3,
+  .seemore {
+    font-size: 23px;
+  }
+  .arrow {
+    width: 18%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  /* intro */
+  .intro {
+    position: relative;
+  }
+  .intro img {
+    width: 25vw;
+    position: absolute;
+    right: 8vw;
+    top: -17vw;
+  }
+  .intro h1 {
+    margin-top: 14vw;
+    /* width: 80%; */
+  }
+  .intro h1 span {
+    display: block;
+  }
+
+  /* something */
+  .arrow {
+    display: inline-block;
+    margin-right: 10vw;
+  }
+  .h2-flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .something-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+    padding: 0 6%;
+  }
+
+  /* featured works */
+  /* .featured-square {
+    display: none;
+  } */
+  .featured-32 {
+    display: block;
+    margin-top: 4rem;
+  }
+
+  .featured-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 6%;
+  }
+  /* skills */
+
+  .clearfix::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .arrow {
+    width: 13%;
+  }
+  .featured figcaption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1045px) {
+  .intro h1 {
+    margin-top: 7vw;
+  }
+  .intro img {
+    top: -13vw;
+    width: 23vw;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+
+  .hand-drawing img {
+    margin-left: 10%;
+  }
+  .fourgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20%;
+    row-gap: 15%;
+  }
+}
+
+@media screen and (min-width: 1215px) {
+  .intro h1 span {
+    display: inline;
+  }
+  .intro h1 {
+    font-size: 80px;
+    width: 90%;
+    margin-top: 10rem;
+  }
+  .intro img {
+    top: -17vw;
+    width: 250px;
+    right: 6vw;
+  }
+  .arrow {
+    width: 10%;
+  }
+  h2 {
+    font-size: 50px;
+  }
+
+  .intro,
+  .something,
+  .featured,
+  .skills {
+    margin-bottom: 8rem;
+  }
+}
